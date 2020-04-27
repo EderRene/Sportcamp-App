@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Work Record"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ForenoonCheckbox"/>
+
+    <LinearLayout
+        android:id="@+id/layoutforenoon"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Forenoon Activity:" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:clickable="false"
+            android:id="@+id/tf_Forenooninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:width="200dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutforenoon_time"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/textview_Forenoon_stattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Start Time" />
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/textview_Forenoon_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+
+            android:text="End Time" />
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AfternoonCheckbox"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutafternoon"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Afternoon Activity:" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:clickable="false"
+            android:id="@+id/tf_Afternooninfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_margin="10dp"
+            android:width="200dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutafternoon_time"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/textview_Afternoon_stattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Start Time" />
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/textview_Afternoon_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="End Time" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/tf_messagebox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:width="300dp"
+        android:text=""
+        android:textStyle="bold" />
+</LinearLayout>
